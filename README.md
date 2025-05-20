@@ -11,11 +11,13 @@ git clone https://github.com/username/nama-repo.git
 cd nama-repo
 ```
 
+
 ### 2. Install Dependensi Laravel
 Jalankan perintah berikut untuk menginstal semua dependensi Laravel menggunakan Composer:
 ```bash
 composer install
 ```
+
 
 ### 3. Salin dan Atur File .env
 Salin file .env.example menjadi .env
@@ -30,11 +32,13 @@ DB_PASSWORD=
 ```
 Pastikan Anda sudah membuat database bernama **dbperpus** di MySQL atau MariaDB.
 
+
 ### 4. Generate Key Aplikasi
 Generate application key Laravel dengan menjalankan:
 ```bash
 php artisan key:generate
 ```
+
 
 ### 5. Migrasi dan Seeder Database
 Untuk membuat ulang seluruh tabel dan mengisi data awal (seeder), jalankan perintah:
@@ -42,6 +46,7 @@ Untuk membuat ulang seluruh tabel dan mengisi data awal (seeder), jalankan perin
 php artisan migrate:fresh --seed
 ```
 migrate:fresh akan menghapus semua tabel yang ada dan membuat ulang dari awal, lalu --seed akan mengisi tabel dengan data dummy dari seeder.
+
 
 ### 6. Jalankan Server Laravel
 Setelah semuanya siap, jalankan server lokal Laravel dengan perintah:
