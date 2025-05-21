@@ -21,7 +21,10 @@ composer install
 <br>
 
 ### 3. Salin dan Atur File .env
-Salin file .env.example menjadi .env
+```bash
+cp .env.example .env
+```
+
 <br>Lalu buka file .env dan sesuaikan konfigurasi database dengan database yang telah Anda buat. Misalnya:
 ```env
 DB_CONNECTION=mysql
