@@ -15,4 +15,7 @@ use App\Http\Controllers\PerpustakaanController;
 */
 
 Route::get('/', [PerpustakaanController::class, 'index'])->name('index');
+Route::post('/books/insert', [PerpustakaanController::class, 'insert'])->name('books.insert');
+Route::post('/books/update', [PerpustakaanController::class, 'update'])->name('books.update');
+Route::post('/books/delete', [PerpustakaanController::class, 'delete'])->name('books.delete');
 Route::get('/books/{id}', [PerpustakaanController::class, 'getBookById'])->name('books.getById');
